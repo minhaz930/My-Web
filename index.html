@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qspiders Noida - Learn & Grow</title>
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOGIN OVERLAY ========== -->
+ <div id="loginOverlay" class="login-overlay">
+  <div class="login-box">
+    <h2>Student Login</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Enter Student ID" required>
+      <input type="email" placeholder="Enter Email" required>
+      <input type="number" placeholder="Enter Mobile Number" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="skip">or <span id="skipLogin">Skip Login</span></p>
+  </div>
+</div>
+
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="assets/qspiders-logo.png" alt="Qspiders Noida logo" class="brand__img">
+        <span class="brand__text">Qspiders <strong>Noida</strong></span>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li class="nav__item--has-dropdown">
+            <a href="#classes">Classes ▾</a>
+            <ul class="dropdown">
+              <li><a href="#html">HTML</a></li>
+              <li><a href="#css">CSS</a></li>
+              <li><a href="#js">JavaScript</a></li>
+              <li><a href="#mern">MERN</a></li>
+            </ul>
+          </li>
+          <li><a href="#placements">Placements</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>Qspiders Noida</span></h1>
+      <p>India’s No.1 Software Training Institute for Placement and Success</p>
+      <a href="#admission" class="btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT INSTITUTE ========== -->
+  <section id="about" class="about container">
+    <h2>About Qspiders</h2>
+    <p>Qspiders Noida is one of the top training institutes offering courses in HTML, CSS, JavaScript, MERN and many more with 100% placement assistance. Thousands of students have been successfully placed in top IT companies.</p>
+  </section>
+
+  <!-- ========== ABOUT TEACHER ========== -->
+  <section id="sir" class="teacher container">
+    <h2>About Our Trainer</h2>
+    <div class="teacher-content">
+      <img src="assets/sir-photo.jpg" alt="Trainer Photo">
+      <div>
+        <h3>Mr. [Your Sir's Name]</h3>
+        <p>He is one of the most dedicated and experienced trainers, known for his friendly teaching style and practical approach. His mission is to make every student a confident developer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLASSES SECTION ========== -->
+  <section id="classes" class="classes container">
+    <h2>Courses & Timings</h2>
+    <div class="grid">
+      <div class="card"><h3>HTML</h3><p>Mon - Wed (10:30AM - 12PM)</p></div>
+      <div class="card"><h3>CSS</h3><p>Mon - Wed (12PM - 1:30PM)</p></div>
+      <div class="card"><h3>JavaScript</h3><p>Tue - Thu (2PM - 3:30PM)</p></div>
+      <div class="card"><h3>MERN Stack</h3><p>Fri - Sat (10AM - 1PM)</p></div>
+    </div>
+  </section>
+
+  <!-- ========== PLACEMENT SECTION ========== -->
+  <section id="placements" class="placements container">
+    <h2>Our Students Got Placed At</h2>
+    <div class="gallery">
+      <img src="assets/student1.jpg" alt="">
+      <img src="assets/student2.jpg" alt="">
+      <img src="assets/student3.jpg" alt="">
+      <img src="assets/student4.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- ========== FEEDBACK SECTION ========== -->
+  <section id="feedback" class="feedback container">
+    <h2>Student Feedback</h2>
+    <div class="feedback-cards">
+      <div class="f-card">
+        <p>“The classes are very interactive and easy to understand. Sir explains each topic clearly!”</p>
+        <h4>- Ayesha</h4>
+      </div>
+      <div class="f-card">
+        <p>“Best institute for learning and placements. Got placed within 2 months after course.”</p>
+        <h4>- Rahul</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ADMISSION FORM ========== -->
+  <section id="admission" class="admission container">
+    <h2>Join New Batch</h2>
+    <form id="admissionForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <select required>
+        <option value="">Select Course</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JavaScript</option>
+        <option value="MERN">MERN</option>
+      </select>
+      <button type="submit" class="btn">Submit</button>
+      <p id="msg"></p>
+    </form>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <p>📍 Qspiders, Sector 62, Noida</p>
+    <p>📞 +91 9308402612</p>
+    <p>✉️ info@qspidersnoida.com</p>
+    <iframe src="https://maps.google.com/maps?q=noida&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© <span id="year"></span> Qspiders Noida | Made with ❤️ by Md Minhaz Ahmad</p>
+  </footer>
+
+  <!-- JS file link -->
+  <script src="script.js" defer></script>
+</body>
+</html>
